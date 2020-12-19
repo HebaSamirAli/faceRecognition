@@ -13,6 +13,7 @@ import Register from './components/Register/Register';
 
 import './App.css';
 
+const serverURL = 'https://vast-island-73881.herokuapp.com/';
 
 const app = new Clarifai.App({
   apiKey:'86c2d8d007e94bf696b9249bd39bae64'
@@ -94,7 +95,7 @@ class App extends Component {
         .then(response => { 
           if (response){
             
-            fetch('http://localhost:3001/image', {
+            fetch(`${this.serverURL}/image`, {
             method: 'put',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({

@@ -1,5 +1,7 @@
 import React from 'react';
 
+const serverURL = 'https://vast-island-73881.herokuapp.com/';
+
 class Register extends React.Component {
     constructor (props){
         super(props);
@@ -11,24 +13,18 @@ class Register extends React.Component {
     }
 
     onNameChange = (event) => {
-        if (!event.target.value === " "){
             this.setState({registerName:event.target.value});
-        }
     }
     onEmailChange = (event) => {
-        if (!event.target.value === " "){
             this.setState({registerEmail:event.target.value});
-        }
     }
     onPasswordChange = (event) => {
-        if (!event.target.value === " "){
             this.setState({registerPassword:event.target.value});
-        }
     }
 
 
     onSubmitRegister = () => {
-        fetch('http://localhost:3001/register', {
+        fetch(`${this.serverURL}/register`, {
             method: 'post',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({
