@@ -2,7 +2,7 @@
   "name": "facerecognition",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hebasamirali.github.io/faceRecognition",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

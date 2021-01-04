@@ -13,7 +13,7 @@ import Register from './components/Register/Register';
 
 import './App.css';
 
-const serverURL = 'https://vast-island-73881.herokuapp.com/';
+// const serverURL = 'https://vast-island-73881.herokuapp.com';
 
 const app = new Clarifai.App({
   apiKey:'86c2d8d007e94bf696b9249bd39bae64'
@@ -95,7 +95,7 @@ class App extends Component {
         .then(response => { 
           if (response){
             
-            fetch(`${this.serverURL}/image`, {
+            fetch('https://face-recognition-detection-api.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const serverURL = 'https://vast-island-73881.herokuapp.com/';
+// const serverURL = 'https://vast-island-73881.herokuapp.com';
 
 class Signin extends React.Component {
     constructor(props){
@@ -20,7 +20,7 @@ class Signin extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        fetch(`${this.serverURL}/signin`, {
+        fetch('https://face-recognition-detection-api.herokuapp.com/signin', {
             method: 'post',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({
