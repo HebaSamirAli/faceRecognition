@@ -2,7 +2,7 @@
   "name": "facerecognition",
   "version": "0.1.0",
   "private": true,
-  "homepage": "hebasamirali.github.io/face.recognition.frontend",
+  "homepage": "https://hebasamirali.github.io/face.recognition.frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -13,6 +13,7 @@
     "react-dom": "^17.0.1",
     "react-particles-js": "^3.4.1",
     "react-scripts": "4.0.1",
+    "react-tilt": "^0.1.4",
     "tachyons": "^4.12.0",
     "web-vitals": "^0.2.4"
   },
