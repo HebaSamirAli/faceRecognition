@@ -1,6 +1,8 @@
 import React from 'react';
 
-// const serverURL = 'https://vast-island-73881.herokuapp.com';
+//const serverURL = 'https://face-recognition-detection-api.herokuapp.com';
+//const serverURL = 'http://localhost:3001';
+
 
 class Signin extends React.Component {
     constructor(props){
